@@ -1,0 +1,115 @@
+:root {
+  --main-bg: #344;
+  --main-text: #eee;
+  --dark-text: #222;
+  --light-bg: #dee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#breadBasket {
+  margin: 1rem auto;
+  background: #DEE;
+  height: 400px;
+  width: 800px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #111;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#breadTitle {
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  color: #DEE;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+input {
+  height: 1.2rem;
+}
+
+#breadForm {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-flow: column;
+  align-content: space-evenly;
+  border-right: 2px solid black;
+}
+
+label {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0.75rem;
+}
+
+.btn {
+  width: 150px;
+  height: 30px;
+  margin: 3rem auto 0 auto;
+  background: #233;
+  color: #dee;
+  border: 1px solid #EFF;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #899;
+  border: 1px solid black;
+  color: #222;
+}
+
+#resultPage {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+  align-items: space-between;
+  text-align: center;
+  padding: 0;
+}
+
+#resultPage h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  padding-bottom: 0.3rem;
+  text-align: center;
+  border-bottom: 1px dotted black;
+  margin-left: 1rem;
+}
+
+#resultPage ul {
+  list-style: none;
+  font-size: 0.9rem;
+  text-align: center;
+  height: 100%;
+}
+
+#resultPage ul li {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
