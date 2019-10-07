@@ -22,7 +22,7 @@ body {
   margin: 1rem auto;
   background: #DEE;
   height: 400px;
-  width: 800px;
+  width: 80%;
   border: 1px solid black;
   border-radius: 10px;
   padding: 1rem;
@@ -112,4 +112,36 @@ label {
   padding: 0.5rem;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 450px) {
+  #breadBasket {
+    flex-flow: column;
+    padding-right: 2rem;
+  }
+
+  #breadForm {
+    width: 100%;
+    border-right: none;
+    overflow: hidden;
+  }
+
+  #breadForm label {
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  #breadForm input {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  #resultPage {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 0.5rem auto 1.5rem auto;
+  }
 }

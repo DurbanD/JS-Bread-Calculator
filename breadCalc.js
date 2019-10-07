@@ -21,7 +21,7 @@ class BreadCalculator {
     breadMakerTitle.innerText = "Bread Calculator";
     breadMakerTitle.id = "breadTitle";
     document.body.appendChild(breadMakerTitle);
-    
+
     let breadBasket = document.createElement('div');
     breadBasket.id = "breadBasket";
     document.body.appendChild(breadBasket);
@@ -150,6 +150,7 @@ class BreadCalculator {
       let water = parseInt(document.getElementById('waterInput').value);
       let calculated = new BreadCalculator(flour, water, sugar, fat, salt, yeast);
       document.getElementById('breadBasket').remove();
+      document.getElementById('breadTitle').remove();
       calculated.loadCalc();
     });
   };
